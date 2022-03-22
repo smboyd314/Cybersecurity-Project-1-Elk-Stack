@@ -1,0 +1,38 @@
+--
+- name: Configure Elk VM with Docker
+  hosts: elk
+  remote_user: azureuser
+  become: true
+  tasks:
+
+    - name: VM memory
+      sysctl:
+        name: vm.max_map_count
+        value: '262144'
+        state: present
+        reload: yes
+
+    - name: Install Docker.io
+      apt:
+        force_apt_get: yes
+        update_cache: yes
+        name: docker.io
+        state: present
+
+    - name: Install Python3-pip
+      apt:
+        force_apt_get: yes
+        name: python3-pip
+        state: present
+
+    - name: Install docker module
+      pip:
+        name: docker
+        state: present
+
+    - name: download and launch docker elk container
+      docker_container:
+        name: elk
+        image: sebp/elk:761
+        state: started
+
