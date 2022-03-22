@@ -104,6 +104,6 @@ The file Elk_playbook.yml should be copied to /etc/ansible on the Web VMs
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ 
 The /etc/ansible/hosts file should be updated with the specific IP address. To specify which machine to install the ELK server, you would update the hosts field at the top of the playbook.
 - Which URL do you navigate to in order to check that the ELK server is running?
--- _http://[ELK-VM-External-IP]:5601/app/kibana
+- - http://[ELK-VM-External-IP]:5601/app/kibana
 
 
