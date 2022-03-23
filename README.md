@@ -67,15 +67,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Increases the Virtual Memory.
-![](README/Images/Increase_Virtual_Memory.png)
+![](Images/Increase_Virtual_Memory.png)
 - Installs Docker.io, pip3, and the Docker module.
-![](README/Images/Download_Docker_pip3_docker_module.png)
+![](Images/Download_Docker_pip3_docker_module.png)
 - Launches and installs the docker ELK container
-![](README/Images/Download_launch_Docker_ELK.png)
+![](Images/Download_launch_Docker_ELK.png)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](README/Images/docker_ps_output.png)
+![](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
