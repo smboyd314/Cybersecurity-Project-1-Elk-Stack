@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Red Team Diagram with ELK](README/Images/Red_Team_with_ELK.png)
+![Red Team Diagram with ELK](Images/Red_Team_with_ELK.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -67,15 +67,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Increases the Virtual Memory.
-![](README/Images/Increase_Virtual_Memory.png)
+![](Images/Increase_Virtual_Memory.png)
 - Installs Docker.io, pip3, and the Docker module.
-![](README/Images/Download_Docker_pip3_docker_module.png)
+![](Images/Download_Docker_pip3_docker_module.png)
 - Launches and installs the docker ELK container
-![](README/Images/Download_launch_Docker_ELK.png)
+![](Images/Download_launch_Docker_ELK.png)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](README/Images/docker_ps_output.png)
+![](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
